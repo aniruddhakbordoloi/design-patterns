@@ -1,0 +1,18 @@
+The problem
+
+Create a weather monitoring application which gives the following displays to a user:
+1. Current conditions
+2. Statistics
+3. Forecast
+These displays depend on temperature, humidity and pressure which are provided by a third party API (in your case, assume this to be set by the client class). The API has got one class
+exposed which holds the information of temp/humid/pressure change. Each time there is a change in any of the params - temperature, humidity or pressure - the display would change and the notifications should be sent out from the exposed API class.
+
+Solutioning
+
+1. Identify who needs to be updated - the displays in this case.
+2. Identify who is the updater - the one who gets the information from the client class - your exposed API class in this case.
+3. The updater has to publish a change event and all subscribers, who need to be updated have to listen and apply the change.
+4. As an advise, the subscriber can listen to events only they are interested in and avoid the publisher from transmitting all data.
+
+
+Try implementing both ways of observer - the push model with your own designed observer and the pull model using java's built in observable.

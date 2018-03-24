@@ -1,0 +1,16 @@
+menu - menuitem
+|
+submenu - subsubmenu
+|			|
+menuitem	menuitem
+
+
+menuitem:
+price
+material bought
+material description
+
+menu:
+menu name
+menu desc
+menu item

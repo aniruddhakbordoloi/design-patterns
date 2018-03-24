@@ -1,0 +1,7 @@
+statement1:
+The output of the source is the input to adapter.
+The output from the adapter is the input to the destination.
+
+Legacy Payment - cash.
+Modern Payment - card.
+you need to pay cash (legacy payment) via the modern payment system which pays by card.

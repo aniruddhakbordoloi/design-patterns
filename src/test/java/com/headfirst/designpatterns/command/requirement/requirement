@@ -1,0 +1,39 @@
+Statement1:
+Customer - passes an order - Waitress - passes the order - Cook - makes the order.
+
+Statement2:
+Create a record in DB.
+Call a service to update a related record.
+Call another service to log a ticket.
+
+Problems:
+1. Simple Remote Control: Design a simple remote control which has only one slot to control a device. The device is a light. You have to switch it on.
+In this case, you need:
+- a remote control.
+- a light.
+- a command from remote control to light to switch it on.
+
+2. Remote Control: Design a remote control which has multiple slots to control devices in a smart home. You have the following devices:
+- Lights: for living room and kitchen.
+- Ceiling Fan: for living room, kitchen and bed room.
+- Curtains: for living room and bed room.
+In this case, you need:
+- a remote control.
+- 2 lights for living room and kitchen, 3 fans for living, kitchen and bedroom, 2 curtains for living and bedroom.
+- 2+3+2 commands from remote control to handle the devices/concerns.
+
+3. You have moved into a new house. It's a smart home fully enabled with IOT. Your house has the following features connected to the IOT system:
+   Lights - can be turned ON, OFF, DIM.
+   Stereo - can be turned/set to ON, OFF, DVD, CD, RADIO, VOLUME.
+   Hottub - can be turned ON, OFF and you can set TEMPERATURE, WATER LEVEL.
+   AC - can be turned ON, OFF and you can set TEMPERATURE.
+   Acceptance Criteria:
+   Design a remote system for this IOT connected smart home wherein when you press the relax button, the following sequence of events happen:
+   - The lights are turned ON and set to DIM.
+   - The stereo is turned ON and set to DVD mode and VOLUME is set to 12.
+   - The hottub is turned ON and the TEMPERATURE is set to 22 with WATER LEVEL as 20 litres.
+   - The AC is turned ON and the TEMPERATURE is set 22.
+In this case, you would need:
+- a remote control
+- 1 light, 1 stereo, 1 hottub, 1 AC
+- 1+1+1+1 commands from remote control to handle the devices.

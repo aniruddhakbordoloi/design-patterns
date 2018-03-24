@@ -1,0 +1,21 @@
+Implement a ducksimulator wherein we have the following requirements:
+1. Four duck types - mallardduck, readheadduck, rubberduck, decoyduck
+2. Mallard duck can be - displayed, fly with wings, quack, swim.
+3. Readhead duck can be - displayed, fly no way, squeak, swim.
+4. Rubber duck can be - displayed, fly no way, swim, quack.
+5. Decoy duck can be - displayed, fly with wings, swim, no quack.
+
+Solutioning
+1. We have four ducks.
+2. Behaviors that differ for each duck are - fly, quack.
+3. Common behaviors - Swim, display.
+4. Put common behaviors together.
+5. Let the behaviors that vary be requested from the respective classes.
+
+
+Another statement:
+Human - Man
+|       |
+Woman - Behavior - ManBehavior
+        |
+        WomanBehavior
