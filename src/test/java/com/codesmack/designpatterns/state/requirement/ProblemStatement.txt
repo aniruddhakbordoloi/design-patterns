@@ -1,0 +1,25 @@
+There is a customer who has 3 types of account with his bank. Implement this customer's experience when he performs a set of standard operations in the bank ATM.
+Account types - Savings, Current, Credit
+User Actions: selectAccount, insertCash, withDrawCash, checkBalance
+Based on an action, the rules for the respective account needs to be applied.
+Rules:
+	For insert cash action:
+	-	given no account type is selected, a user should be shown a warning that the account type needs to be selected.
+	- 	given a savings account, when a user inserts cash, overall balance should increase by the amount inserted. An additional interest rate must be applied and hence the amount value
+		should increase.
+	-	given a current account, when a user inserts cash, overall balance should increase by the amount inserted. No interest rate applicable and hence the amount doesn't change.
+	-	given a credit account, when a user inserts cash,
+			-	If the amount paid matches the credit bill, approve the transaction and ensure no levy charges are applicable.
+			-	If the amount is greater than the credit bill, give a warning to the user that only applicable charges need to be paid.
+			-	If the amount is lesser than the credit bill, give a warning to the user that the money is lesser than the credit bill and 15% levy charges applicable on remaining money.
+				If the user still proceeds, apply the rule for the warning, else, cancel the transaction.
+
+	For withdraw cash action:
+	-	given no account type is selected, a user should be shown a warning that the account type needs to be selected.
+	-	given a savings account, when a user withdraws cash, overall balance should decrease by the amount withdrawn. No interest rates applicable.
+	-	given a current account, when a user withdraws cash, overall balance should decrease by the amount withdrawn. 10% levy charges applicable on the amount withdrawn and that should
+		be deducted from existing balance in current account.
+	-	given a credit account, when a user withdraws cash,
+			-	If the available credit balance is less than equal to 0, give a warning message to the user that money can't be wothdrawn.
+			-	If the available credit limit is less than the withdrawal amount requested, give a warning message to the user of the maximum credit limit and deny the transaction.
+			-	If the available credit limit is greater or equal to the withdrawal amount requested, put a 15% levy on the amount withdrawn and add this to the next bill cycle.
